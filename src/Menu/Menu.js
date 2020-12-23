@@ -12,10 +12,11 @@ class Menu extends Component {
         return (
             <nav>
                 <ul>
-                   <a className="link" href="/">
-                       {this.props.children}
-                   </a>
-                   
+                    <Menuitem>
+                        <a className="link" href="/">
+                            {this.props.children}
+                        </a>
+                   </Menuitem>
                    
                 </ul>
             </nav>

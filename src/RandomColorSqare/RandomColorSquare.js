@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import CopyButton from './CopyButton/CopyButton';
 import './RandomColorSquare.css'
 
 class RandomColorSquare extends Component {
@@ -15,18 +15,22 @@ class RandomColorSquare extends Component {
     changeColor() {
         this.setState ({
             backgroundColor :  '#' + Math.floor(Math.random()*16777215).toString(16)
+            
         })
-        
-        
         
     }
 
     render() {
-        const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        
         return (
-            <div onClick={this.changeColor.bind(this)} className="square" style={{backgroundColor: this.state.backgroundColor}} >
+            <div className="background">
+                <div onClick={this.changeColor.bind(this)} className="square" style={{backgroundColor: this.state.backgroundColor}} >
+                    
+                </div>
                 {this.state.backgroundColor}
             </div>
+            
+
         );
     }
 }

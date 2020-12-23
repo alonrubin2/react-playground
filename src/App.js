@@ -15,6 +15,7 @@ function App() {
         <Menu>
             <Menuitem route="/">Home</Menuitem>
             <Menuitem route="/about">About</Menuitem>
+            <Menuitem route="/contact">Contact</Menuitem>
         </Menu>
         <hr/>
         <SpecialButton />
