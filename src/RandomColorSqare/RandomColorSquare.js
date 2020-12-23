@@ -28,6 +28,9 @@ class RandomColorSquare extends Component {
                     
                 </div>
                 {this.state.backgroundColor}
+                <button onClick={() => navigator.clipboard.writeText(this.state.backgroundColor)}>
+                Copy Color
+                </button>
             </div>
             
 
